@@ -16,11 +16,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* flex-direction: column; */
+}
+.heading {
+    color: #3867d6;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .container {
   width: 500px;
-  height: auto;
-  /* height: min-content; */
   padding: 25px 35px;
   background-color: #dfe6e9;
   border-radius: 10px;
@@ -58,16 +64,39 @@ body {
     border-radius: 6px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s;
-    background-color: #485460;
-    /* padding: 10px; */
+    transition:  1s;
+
 }
-#qrimg {
+#imgbox img {
     width: 100%;
     padding: 10px;
 }
-#img.show-img {
+#imgbox.show-img {
     max-height: 300px;
     margin: 10px auto;
     border: 1px solid #d1d1d1;
+}
+#validation {
+    color: red;
+
+}
+.error {
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
