@@ -10,11 +10,13 @@
 
 <body>
     <div class="container-fluid" >
-            <div class="container">
+        <div class="container">
+            <h1 class="heading">Create QR Code</h1>
                 <p> Text & URL</p>
                 <input type="text" placeholder="Enter your Text & URL" id="userinput">
+                <p id="validation"></p>
                 <div id="imgbox">
-                    <!-- <img  alt="" id="qrimg"> -->
+                    <img  alt="" id="qrimg">
                 </div>
                 <button onclick="generateQR()"> Generate QR Code</button>
             </div>
